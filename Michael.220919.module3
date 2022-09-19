@@ -1,0 +1,308 @@
+    1  pwd
+    2  ls
+    3  ls /home
+    4  ls /
+    5  ls / -l
+    6  ls - l /
+    7  ls -l /
+    8  ls /
+    9  ls / -l
+   10  man ls
+   11  cd usr/bin
+   12  ls / -l
+   13  cd /usr
+   14  dir
+   15  cd /bin
+   16  cd
+   17  mkdir
+   18  mkdir EXAMPLE
+   19  mkdir c300
+   20  cd EXAMPLE
+   21  touch abc.txt
+   22  ls -ltr
+   23  pwd
+   24  -xr-xr-x 152 root root    0 Sep 15 18:32 proc
+   25  dr-xr-x---   3 root root  103 Sep 15 18:32 root
+   26  drwxr-xr-x  29 root root 1000 Sep 15 19:03 run
+   27  lrwxrwxrwx   1 root root    8 Aug 15 20:20 sbin -> usr/sbin
+   28  drwxr-xr-x   2 root root    6 Apr  9  2019 srv
+   29  dr-xr-xr-x  13 root root    0 Sep 15 18:32 sys
+   30  drwxrwxrwt   8 root root  172 Sep 16 03:19 tmp
+   31  drwxr-xr-x  13 root root  155 Aug 15 20:20 usr
+   32  drwxr-xr-x  19 root root  269 Sep 15 18:32 var
+   33  [ec2-user@ip-172-31-30-137 ~]$ cd /usr
+   34  [ec2-user@ip-172-31-30-137 usr]$ dir
+   35  bin  etc  games  include  lib  lib64  libexec  local  sbin  share  src  tmp
+   36  [ec2-user@ip-172-31-30-137 usr]$ cd /bin
+   37  [ec2-user@ip-172-31-30-137 bin]$ cd
+   38  [ec2-user@ip-172-31-30-137 ~]$ mkdir
+   39  mkdir: missing operand
+   40  Try 'mkdir --help' for more information.
+   41  [ec2-user@ip-172-31-30-137 ~]$ mk
+   42  clear
+   43  pwd
+   44  cd
+   45  pwd
+   46  [ec2-user@ip-172-31-30-137 ~]$ pwd
+   47  /home/ec2-user
+   48  cd var/log
+   49  cd
+   50  dir
+   51  ls -l
+   52  ls / -l
+   53  cd /log
+   54  cd log/
+   55  cd var/
+   56  cd /var
+   57  cd ..
+   58  cd /var/log
+   59  cd..
+   60  cd ..
+   61  ls
+   62  cd
+   63  cd /
+   64  ls man
+   65  ls -man
+   66  ls --help
+   67  cd /var
+   68  ls -man
+   69  ls -Sr
+   70  uname -m
+   71  history > Lawless.220916.module2
+   72  git clone https://github.com/BigRoom2000/exampleRepo.git
+   73  history
+   74  sudo yum install git
+   75  git config --global user.name "Mickey Lawless"
+   76  git config --global user.email lawlessmickey@gmail.com
+   77  git clone https://github.com/BigRoom2000/exampleRepo.git
+   78  pwd
+   79  cd
+   80  git clone https://github.com/BigRoom2000/exampleRepo.git
+   81  pwd
+   82  dir
+   83  cd exampleRepo
+   84  dir
+   85  cd exer1
+   86  git config --global user.name "Mickey Lawless"
+   87  git config --global user.email lawlessmickey@gmail.com
+   88  cd
+   89  dir
+   90  git add .
+   91  cd
+   92  git add .
+   93  git status
+   94  git push
+   95  ls
+   96  cd exampleRepo
+   97  git status
+   98  ls
+   99  git status
+  100  cd exer1
+  101  git status
+  102  touch y568
+  103  ls
+  104  git status
+  105  git add
+  106  git add .
+  107  git status
+  108  git commit
+  109  git commit -m
+  110  git commit -m "hello world"
+  111  git push
+  112  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
+  113  git push
+  114  git pus
+  115  git push
+  116  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
+  117  git push
+  118  cd
+  119  touch 123.txt
+  120  git status
+  121  dir
+  122  cd exampleRepo
+  123  dir
+  124  touch 123.txt
+  125  git status
+  126  git add .
+  127  git push
+  128  dir
+  129  git clone https://github.com/BigRoom2000/exampleRepo.git
+  130  git add .
+  131  git commit
+  132  git commit "hellow world"
+  133  clear
+  134  cd
+  135  dir
+  136  cd exampleRepo
+  137  dir
+  138  touch 123.txt
+  139  mkdir BasicExercise
+  140  dir
+  141  cd BasicExercise
+  142  dir
+  143  cd ..
+  144  rmdir BasicExercise
+  145  mkdir BasicExercise
+  146  cd
+  147  pwd
+  148  ls
+  149  find /home/ec2-user/ -name"123"
+  150  fomd "file*"
+  151  find "file*"
+  152  find -name "file*"
+  153  find -name "123*"
+  154  history
+  155  cat history
+  156  cat history > history1
+  157  echo 123
+  158  echo 123 > file
+  159  dir
+  160  cat file
+  161  echo 123 > file
+  162  cat file
+  163  echo 123 >> file
+  164  cat file
+  165  less file
+  166  more file
+  167  less file
+  168  clear
+  169  cd
+  170  dir
+  171  cp file file123
+  172  dir
+  173  ls -ltr
+  174  ls -l
+  175  cd
+  176  clear
+  177  SIZE=170
+  178  size = 170
+  179  echo SIZE
+  180  echo $SIZE
+  181  dir
+  182  cd c300
+  183  echo $SIZE
+  184  CD
+  185  cd
+  186  sudo yum update
+  187  git clone https://github.com/BigRoom2000/exampleRepo.git
+  188  cd
+  189  git clone https://github.com/BigRoom2000/exampleRepo.git
+  190  clear
+  191  cd
+  192  dir
+  193  git config --global user.name "Michael Lawless"
+  194  git config --global user.email lawlessmickey@gmail.com
+  195  ls
+  196  cd exampleRepo
+  197  git status
+  198  ls
+  199  touch 9.19
+  200  ls
+  201  git status
+  202  git add .
+  203  git status
+  204  git commit
+  205  git commit -m "hello world"
+  206  clear
+  207  ls
+  208  ls usr/bin/
+  209  cd
+  210  ls /usr/bin/
+  211  clear
+  212  man ps
+  213  ps -ef
+  214  ps -f$$
+  215  ps -ef f
+  216  clear
+  217  ps -ef | grep -v root
+  218  pstree -shapu $$
+  219  ps -ef | egrep "$$"|cmd"
+
+
+"
+  220  ps -ef | egrep "$$|cmd"
+  221  clear
+  222  git status
+  223  cd
+  224  git statu
+  225  git status
+  226  dir
+  227  cd exampleRepo
+  228  git status
+  229  touch fakefile
+  230  git add . 
+  231  git commit -m "hello"
+  232  git push
+  233  clear
+  234  cd
+  235  dir
+  236  cd
+  237  cd ..
+  238  cd
+  239  cd ..
+  240  dir
+  241  pwd
+  242  clear
+  243  cd
+  244  cd..
+  245  cd ..
+  246  pwd
+  247  mkdir Algo1
+  248  cd
+  249  mkdir Algo1
+  250  cd Algo1
+  251  mkdir config bin logs scripts
+  252  ls
+  253  cd config
+  254  touch config.config variables
+  255  ls
+  256  cd ..
+  257  cd scripts
+  258  touch start.sh stop.sh admin.sh
+  259  cd ..
+  260  cd logs
+  261  touch today.log
+  262  ls
+  263  cd
+  264  pwd
+  265  ls -ltr
+  266  rm Algo1/config/variables
+  267  rm -rf Algo1/bin/
+  268  cd Algo1
+  269  ls
+  270  cd
+  271  mkdir Algo1/bin
+  272  ls
+  273  cd Algo1
+  274  ls
+  275  dir
+  276  cd
+  277  mkdir Algo1/oldlogs
+  278  rm -rf Algo1/oldlogs
+  279  mkdir Algo1/logs/oldlogs
+  280  cd Algo1/logs/oldlgos
+  281  cd Algo1/logs/oldlogs
+  282  mkdir 2019 2018 2017
+  283  cd 2017
+  284  touch 2017.log
+  285  cd ..
+  286  cd 2018
+  287  touch 2018.log
+  288  cd ..
+  289  cd 2019
+  290  touch 2019.log
+  291  cd
+  292  rm -rf Algo1/logs/oldlogs
+  293  ls
+  294  cd Algo1
+  295  ls
+  296  cd logs
+  297  ls
+  298  cd
+  299  pwd
+  300  find . -name *.sh
+  301  cd Algo1/scripts
+  302  rm s*.sh
+  303  ls
+  304  cd
+  305  history > Michael.220919.module3
