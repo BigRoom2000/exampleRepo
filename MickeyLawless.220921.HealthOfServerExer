@@ -1,0 +1,56 @@
+    1  ps -ef
+    2  logname
+    3  ps -ef | grep ec2-user
+    4  ps -ef | grep ec2-user | grep -v root
+    5  clear
+    6  ps -ef | grep -v ec2-user
+    7  clear
+    8  ps =ef
+    9  ps f$$
+   10  ps -f$$
+   11  ps -f $$
+   12  ps -ef $$
+   13  pstree
+   14  pstree $$
+   15  pstree
+   16  clear
+   17  pstree $
+   18  pstree ec2-user
+   19  pstree $$
+   20  ps -eo User,pid,cmd
+   21  ps -eo user, pid, cmd
+   22  ps -eo user,pid,cmd
+   23  ps -eo pid > list
+   24  ls
+   25  clear
+   26  sleep 300 &
+   27  ps -ef | grep sleep
+   28  kill -9 19549
+   29  top
+   30  top | grep root
+   31  clear
+   32  top -u
+   33  top
+   34  clear
+   35  top -u ec2-user
+   36  clear
+   37  ping yahoo.com
+   38  traceroute www.yahoo.com > yahoo.route
+   39  less yahoo.route
+   40  ln -s yahoo.route route
+   41  ls -l
+   42  clear
+   43  netstat -a >output 
+   44  mkdir network
+   45  ls
+   46  mv yahoo.route network/
+   47  mv output network/
+   48  cd network
+   49  ls
+   50  ifconfig
+   51  ifconfig $$
+   52  history > MickeyLawless.220921.HealthOfServerExer
+   53  mv MickeyLawless.220921.HealthOfServerExer exampleRepo/
+   54  mv MickeyLawless.220921.HealthOfServerExer /
+   55  cd 
+   56  history > MickeyLawless.220921.HealthOfServerExer

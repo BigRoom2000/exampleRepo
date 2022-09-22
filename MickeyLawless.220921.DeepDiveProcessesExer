@@ -1,0 +1,42 @@
+    1  sleep 10
+    2  sleep 500 &
+    3  jobs
+    4  sleep 700 &
+    5  jobs
+    6  fg %2
+    7  clear
+    8  sleep 10 & && echo "hello world"
+    9  sleep 10 && echo "hello world" &
+   10  clear
+   11  sleep 5; man ls
+   12  ls
+   13  clear
+   14  cat fixlog* | grep -v 35=D > fixlog.log
+   15  ls
+   16  cat fixlog20220920190303.log | grep -v 35=D > fixlog.log
+   17  cat fixlog.log
+   18  clear
+   19  cat fixlog20220920190303.log | grep -v 35=D > fixlog.log
+   20  cat fixlog.log
+   21  clear
+   22  ls
+   23  cat fixlog* > newFile
+   24  cat newFile
+   25  cat newFile | grep -v 35=D > fixlog.log
+   26  clear
+   27  cat  newFile
+   28  clear
+   29  ls
+   30  grep 35=8 fixlog.log | cat fixlog.log
+   31  grep 35=8 fixlog.log || cat fixlog.log
+   32  grep 35=8 fixlog.log || cat fixlog.loggrep 35=8 fixlog.log || cat fixlog.log
+   33  clear
+   34  grep 35=D fixlog.log || grep 35=8 fixlog.log
+   35  clear
+   36  watch date
+   37  man watch
+   38  ./fixGenerator.sh
+   39  ./fixGenerator.sh &
+   40  watch -n 5 - d wc -l fixlog20220921195416.log
+   41  clear
+   42  history > exampleRepo/MickeyLawless.220921.DeepDiveProcessesExer

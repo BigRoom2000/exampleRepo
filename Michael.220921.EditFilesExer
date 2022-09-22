@@ -1,0 +1,14 @@
+    1  vim avengers.txt
+    2  wc -w avengers.txt
+    3  vim avengers.txt
+    4  wc -l
+    5  wc -l avengers.txt
+    6  vim avengers.txt
+    7  wc -l avengers.txt
+    8  vim avengers.txt
+    9  mv avengers.txt exampleRepo/avengers.MickeyLawless
+   10  ls
+   11  cd exampleRepo
+   12  ls
+   13  vim avengers.MickeyLawless
+   14  history > Michael.220921.EditFilesExer
