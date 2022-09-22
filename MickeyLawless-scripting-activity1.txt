@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Activity 1
+
+# write current username
+echo $USER
+
+# write current date
+echo $(date)
+
+# write what the time is
+echo $(date "+%T")
+
+# write the current working directory
+echo $(pwd)
+
+# write the number of files in the current directory
+echo $(ls | wc -l)
+
+# write the biggest file in the directory
+find . -type f -printf '%s %p\n'| sort -nr|head -n 1
+
+exit 0
