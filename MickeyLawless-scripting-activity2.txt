@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# scripting activity 2
+
+#cd /home/ec2-user/exampleRepo/act2dir
+
+for file in act2dir/*; do
+	#echo $file
+	if [[ "$file" != *".202"* ]];then
+		mv $file $file.$(date '+%Y%m%d')
+	fi 
+done
+
+
+
+
+
