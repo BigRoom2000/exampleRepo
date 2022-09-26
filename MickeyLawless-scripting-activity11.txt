@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Activity 11
+
+# read file into an array
+readarray array < act11Nums
+# read contents of array into variable, then back into another array to account for spaces
+var=${array[@]}
+numarray=($var)
+#use sort to send only unique numbers recursively
+printf '%s\n' "${numarray[@]}" |  sort -nru
+
+exit 0

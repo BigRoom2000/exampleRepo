@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Activity 3B
+
+echo "Enter your 6 lottery numbers(IN ORDER INCLUDING THE BONUS BALL NUMBER) with a space between them"
+read userInput
+userNums=($userInput)
+echo -e "\nWinning Numbers"
+readarray -t lottoNums < /home/ec2-user/exampleRepo/lotteryFile.$(date '+%Y%m%d')
+echo "${lottoNums[*]}"
+echo -e "\nYour Numbers"
+echo "${userNums[*]}"
+
+echo "${userNums[0]}"
+echo "${lottoNums[0]}"
+if [ "${userNums[0]}" = "${lottoNums[0]}" ]; then
+	echo "one match"
+else
+	echo "no matches"
+fi

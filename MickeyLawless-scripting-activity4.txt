@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Activity 4
+
+# Set password criteria for while loop
+passlength=0
+while [ $passlength -le 7 ] || [[ ! $password =~ [0-9] ]] || [[ ! $password =~ [[:upper:]] ]] || [[ ! $password =~ [[:lower:]] ]]
+do
+	# if criteria is not met, write a message with instructions on what needs to be included in password
+	echo "Type in a password with more than 8 characters containing at least one number, one uppercase letter, and one lowercase letter."
+	# have user enter a password
+	read password
+	# check password length
+	passlength="$(echo $password |awk '{print length}')"
+done
+# after exiting while loop, write success message
+echo "Password meets criteria"
+
+exit 0

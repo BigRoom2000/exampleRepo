@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Activity 8
+
+# initialize empty array
+declare -a array1=()
+# set counter equal to zero
+counter=0
+# set max number of iterations in while loop to 10
+while [[ counter -le 9 ]]
+do
+	# ask user to type in a number, increment counter, save user input to variables
+       	echo "Type in an Integer"
+	read number
+		# make sure user input contains no letters, special characters, or decimals
+		re='^[0-9]+$'
+		if ! [[ $number =~ $re ]] ; then
+			echo "Error: Not a Number/Integer" >&2; exit 1
+		fi
+	let "counter++"
+	array1+=($number)
+	# this stops the following if statements from running after 10 numbers have been entered
+	if [[ counter -ge 10 ]]; then
+		break
+	fi
+		# after 5 numbers have been entered, ask each time if they want to continue
+		if [[ counter -ge 5 ]]; then
+			echo "Would you to like enter another number? (Press n to stop, press any other key to continue)"
+			read continue
+			if [ $continue == "n" ]; then
+				break
+			fi
+		fi
+
+done
+# set variables
+mult=1
+sum=0
+min=${array1[0]}
+max=${array1[0]}
+# use loop to perform calculations
+for i in "${array1[@]}";
+do
+	mult=$((mult*i))
+	sum=$((sum+i))
+	(( i < min )) && min=$i
+	(( i > max )) && max=$i
+done
+# get the number of numbers entered by user
+arrayLength="$(echo ${#array1[@]})"
+# use awk to divide sum by the number of numbers entered by the user and return a float
+average=`echo "$sum $arrayLength" | awk '{printf "%.2f\n", $1/$2}'`
+# echo numbers and calculations
+echo "Numbers Entered: " ${array1[@]}
+echo "Product: " $mult
+echo "Average: " $average
+echo "Sum: " $sum
+echo "Min: " $min
+echo "Max: " $max
+
+exit 0

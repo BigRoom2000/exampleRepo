@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# activity 3
+
+# create two arrays, the 1st with 1-50 and the 2nd with 1-10
+lottoNums=($(shuf -i 1-50 -n5))
+bonusNums=($(shuf -i 1-10 -n1))
+# combine normal lottery numbers and bonus ball number into one array
+fullListNums=("${lottoNums[@]}" "${bonusNums[@]}")
+# loop through contents in the full list array, send numbers to a file with today's date in it
+for j in "${fullListNums[@]}"
+do
+	printf "%s " "${fullListNums[@]}" > lotteryFile.$(date '+%Y%m%d')	
+	#echo $j > lotteryFile.$(date '+%Y%m%d')
+done
